@@ -1,0 +1,12 @@
+.bestsellers__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.bestsellers__list {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 130px 130px;
+  grid-column-gap: 30px;
+}

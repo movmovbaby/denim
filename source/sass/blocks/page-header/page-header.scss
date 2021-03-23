@@ -1,0 +1,11 @@
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

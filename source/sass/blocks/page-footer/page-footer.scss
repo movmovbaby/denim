@@ -1,0 +1,28 @@
+.page-footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.page-footer__nav-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  grid-template-rows: auto auto auto;
+}
+
+.page-footer__socials-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+}
+
+.page-footer__socials-item {
+  flex: 1;
+
+  &:last-child {
+    flex: 2.4;
+  }
+}

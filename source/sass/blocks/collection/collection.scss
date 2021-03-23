@@ -1,0 +1,21 @@
+/* .collection__promo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+} */
+
+.collection__promo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collection__photo-wrapper {
+  width: 320px;
+}
+
+.collection__photo {
+  display: flex;
+  flex-direction: column;
+}
