@@ -3,6 +3,14 @@
   flex-wrap: wrap;
   flex-direction: column;
 } */
+.collection__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 678px;
+    margin: 0 auto;
+  }
+}
 
 .collection__promo {
   display: flex;
