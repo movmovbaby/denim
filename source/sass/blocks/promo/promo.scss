@@ -20,3 +20,11 @@
     flex-basis: 100%;
   }
 }
+
+.promo__links-social-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}

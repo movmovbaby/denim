@@ -10,14 +10,59 @@
 }
 
 .categories__list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  flex-basis: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: repeat(2, min-content);
   column-gap: 30px;
 
   @media (min-width: $tablet-width) {
+    flex-basis: 100%;
     order: 3;
+    grid-template-columns: repeat(2, 324px);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 270px);
+  }
+}
+
+.categories__item-jeans {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.categories__item-shirts {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.categories__item-overalls {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+  }
+}
+
+.categories__item-jackets {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
   }
 }
 
@@ -37,18 +82,27 @@
   @media (min-width: $tablet-width) {
     width: 324px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 270px;
+  }
 }
 
 .category:nth-child(4n + 2) {
   justify-content: flex-start;
 
   .category__img {
-    height: 126px;
     width: 130px;
+    height: 126px;
 
     @media (min-width: $tablet-width) {
-      height: 290px;
       width: 324px;
+      height: 290px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 270px;
+      height: 290px;
     }
   }
 }
@@ -56,12 +110,22 @@
 .category:nth-child(4n + 3) {
   justify-content: flex-end;
 
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
+
   .category__img {
+    width: 130px;
     height: 126px;
 
     @media (min-width: $tablet-width) {
-      height: 290px;
       width: 324px;
+      height: 290px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 270px;
+      height: 290px;
     }
   }
 }

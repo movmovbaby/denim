@@ -10,6 +10,10 @@
     width: 678px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+  }
 }
 
 .collection__promo {
@@ -17,13 +21,31 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    width: 470px;
+  }
 }
 
 .collection__photo-wrapper {
   width: 320px;
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
 }
 
 .collection__photo {
-  display: flex;
-  flex-direction: column;
+  width: 320px;
+  height: 226px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 287px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    height: 370px;
+  }
 }
