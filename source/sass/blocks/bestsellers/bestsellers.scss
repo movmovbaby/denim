@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-top: 54px;
+  padding-bottom: 67px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -9,11 +11,22 @@
   }
 }
 
+.bestsellers__header {
+  font-family: "Work Sans", "Arial", "Helvetica", sans-serif;
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
 .bestsellers__list {
   display: grid;
   list-style: none;
   grid-template-columns: 130px 130px;
   grid-column-gap: 30px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 324px 324px;
@@ -29,6 +42,7 @@
 .product-item__img {
   width: 130px;
   height: 160px;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -39,4 +53,31 @@
     width: 270px;
     height: 349px;
   }
+}
+
+.product-item__name {
+  font-family: "Work Sans", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 10px;
+}
+
+.product-item__price {
+  font-family: "Work Sans", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.bestsellers__link {
+  align-self: center;
+  font-family: "Work Sans", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: $main-dark;
 }

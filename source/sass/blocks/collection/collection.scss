@@ -1,8 +1,3 @@
-/* .collection__promo-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-} */
 .collection__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -16,15 +11,51 @@
   }
 }
 
+.collection__promo-wrapper {
+  background-color: palevioletred;
+  padding: 15px 15px 0 15px;
+}
+
 .collection__promo {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  background-color: $light-grey;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
   @media (min-width: $desktop-width) {
     width: 470px;
   }
+}
+
+.collection__promo-text {
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: $main-grey;
+  margin-bottom: 12px;
+}
+
+.collection__promo-header {
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.collection__promo-button {
+  padding: 24px 34px 24px 34px;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .collection__photo-wrapper {
