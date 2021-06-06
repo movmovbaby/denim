@@ -1,6 +1,7 @@
 .promo {
   background-color: $light-grey;
   padding-top: 15px;
+  padding-bottom: 13px;
 }
 
 .promo__wrapper {
@@ -42,7 +43,7 @@
   }
 
   &::before {
-    bottom: 189px;
+    bottom: 193px;
     right: 113px;
     background-image: repeating-linear-gradient(
       45deg,
@@ -80,11 +81,12 @@
   font-size: 86px;
   line-height: 100px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 26px;
 }
 
 .promo__button {
-  padding: 27px 16px 27px 17px;
+  padding: 21px 17px 24px 18px;
+  font-family: "Work Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;

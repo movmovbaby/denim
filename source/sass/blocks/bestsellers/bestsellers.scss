@@ -18,7 +18,7 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
 }
 
 .bestsellers__list {
@@ -26,7 +26,8 @@
   list-style: none;
   grid-template-columns: 130px 130px;
   grid-column-gap: 30px;
-  margin-bottom: 40px;
+  grid-row-gap: 24px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 324px 324px;
@@ -42,7 +43,6 @@
 .product-item__img {
   width: 130px;
   height: 160px;
-  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -61,7 +61,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  padding-top: 10px;
+  padding-top: 7px;
 }
 
 .product-item__price {
@@ -69,7 +69,8 @@
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 22px;
+  padding-top: 23px;
 }
 
 .bestsellers__link {
@@ -80,4 +81,16 @@
   font-size: 16px;
   line-height: 19px;
   color: $main-dark;
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: -4px;
+    width: 70px;
+    height: 2px;
+    background-color: $main-dark;
+  }
 }
