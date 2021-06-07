@@ -12,7 +12,12 @@
 }
 
 .collection__promo-wrapper {
-  background-color: palevioletred;
+  background-image: repeating-linear-gradient(
+    135deg,
+    black 0,
+    transparent 1px,
+    transparent 10px
+  );
   padding: 15px 15px 0 15px;
 }
 
@@ -22,7 +27,7 @@
   flex-direction: column;
   align-items: center;
   background-color: $light-grey;
-  padding-top: 40px;
+  padding-top: 36px;
   padding-bottom: 40px;
 
   @media (min-width: $desktop-width) {
@@ -37,7 +42,7 @@
   font-size: 18px;
   line-height: 21px;
   color: $main-grey;
-  margin-bottom: 12px;
+  margin-bottom: 2px;
 }
 
 .collection__promo-header {
@@ -46,11 +51,11 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .collection__promo-button {
-  padding: 24px 34px 24px 34px;
+  padding: 20px 34px 20px 34px;
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;

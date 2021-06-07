@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 60px;
+  padding-top: 49px;
   padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
@@ -18,7 +18,7 @@
   font-size: 26px;
   line-height: 30px;
   color: $main-dark;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .categories__list {
@@ -26,7 +26,7 @@
   grid-template-columns: repeat(2, 130px);
   grid-template-rows: repeat(2, min-content);
   column-gap: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     flex-basis: 100%;
@@ -48,9 +48,18 @@
   color: $main-dark;
 }
 
+.category__img {
+  margin-bottom: 11px;
+}
+
 .categories__item-jeans {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+
+  .category__name {
+    /*для того, чтобы изображение заходило в верхний блок, как в макете*/
+    margin-bottom: -8px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
@@ -71,6 +80,7 @@
 .categories__item-overalls {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  margin-top: -1px;
 
   @media (min-width: $desktop-width) {
     grid-column: 4 / 5;
@@ -90,12 +100,24 @@
 
 .categories__link {
   align-self: center;
-  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-family: "Work Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: $main-dark;
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: -4px;
+    width: 70px;
+    height: 2px;
+    background-color: $main-dark;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
