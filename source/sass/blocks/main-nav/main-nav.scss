@@ -8,12 +8,23 @@
   padding-right: 15px;
   background-color: $light-grey;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 }
 
 .main-nav__list {
   list-style: none;
   display: flex;
   gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    gap: 35px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;

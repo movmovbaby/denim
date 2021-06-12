@@ -10,6 +10,11 @@
   align-items: center;
   padding-bottom: 20px;
   padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
 }
 
 .main-nav {
