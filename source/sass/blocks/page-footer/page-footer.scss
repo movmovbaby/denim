@@ -18,9 +18,10 @@
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  row-gap: 21px;
+  column-gap: 30px;
   grid-template-rows: auto auto auto;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -65,6 +66,10 @@
 
 .page-footer__socials-item {
   flex: 1;
+
+  &:first-child {
+    padding-left: 6px;
+  }
 
   &:last-child {
     flex: 2.4;
