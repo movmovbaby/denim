@@ -1,0 +1,470 @@
+.product-card {
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1170px;
+  }
+}
+
+.product-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 4px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat (2, 324px);
+    grid-template-rows: repeat (2, 1fr);
+    column-gap: 30px;
+    margin: 37px auto 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 56px auto 0 auto;
+  }
+}
+
+.product-slider {
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.product-slider__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.slider-list {
+  list-style-type: none;
+  width: 244px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    gap: 20px;
+  }
+}
+
+.slider-list__item {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.slider-list__img {
+  display: block; /*это для тега picture, хз как лечить по другому
+  но picture вносит 4px в высоту элемента li, из-за чего на плгшетном разрешении разъезжается макет, а на мобильном все норм.
+  надо разобраться*/
+  width: 244px;
+  height: 310px;
+
+  @media (min-width: $tablet-width) {
+    width: 151px;
+    height: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 85px;
+    height: 113px;
+  }
+}
+
+.slider-list__item--active {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    .slider-list__img {
+      width: 324px;
+      height: 360px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .slider-list__img {
+      width: 400px;
+      height: 523px;
+    }
+  }
+}
+
+.product-slider__button {
+  display: flex;
+  width: 11px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  align-self: center;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-bottom: 249px;
+  }
+}
+
+.product-slider__button--to-right {
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
+}
+
+.product-slider__button-img {
+  width: 11px;
+  height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 21px;
+    height: 18px;
+  }
+}
+
+.product-description {
+  background-color: $light-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin: 0;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.product-description__wrapper {
+  width: 290px;
+  margin: 0 auto;
+  margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin-top: 43px;
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+    margin-top: 60px;
+  }
+}
+
+.product-description__header {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.product-description__text {
+  width: 275px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 19px;
+    width: 375px;
+    margin-bottom: 37px;
+  }
+}
+
+.product-description__price {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.product-description__add-to-cart-button {
+  padding: 21px 54px 21px 54px;
+  margin-bottom: 41px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.color-picker {
+  padding-top: 3px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+}
+
+.color-picker__inner-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.color-picker__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+
+  @media (min-width: $tablet-width) {
+    gap: 21px;
+  }
+}
+
+.color-picker__checkbox-label {
+  position: relative;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+.color-picker__check-box {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: 2px;
+}
+
+.color-picker__check-input:focus + .color-picker__check-box {
+  transform: scale(1.05, 1.05);
+}
+
+.color-picker__check-input:checked + .color-picker__check-box::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid green;
+}
+
+/* .color-picker__checkbox-label::before .color-picker__checkbox {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.color-picker__checkbox + .color-picker__checkbox-label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.color-picker__checkbox:focus + .color-picker__checkbox-label::after,
+.color-picker__checkbox:hover + .color-picker__checkbox-label::after {
+  transform: scale(1.05, 1.05);
+  top: 2px;
+  left: 2px;
+}
+
+.color-picker__checkbox:focus + .color-picker__checkbox-label::before,
+.color-picker__checkbox:hover + .color-picker__checkbox-label::before {
+  transform: scale(1.1, 1.1);
+}
+
+.color-picker__checkbox[id="color-picker-greengray"]
+  + .color-picker__checkbox-label::after {
+  background-color: $color-picker-greengray;
+}
+
+.color-picker__checkbox:focus + .color-picker__checkbox-label::after {
+  width: 18px;
+  height: 18px;
+}
+
+.color-picker__checkbox[id="color-picker-greengray"]:checked
+  + .color-picker__checkbox-label::before {
+  border: 1px solid $color-picker-greengray;
+}
+
+.color-picker__checkbox[id="color-picker-blue"]
+  + .color-picker__checkbox-label::after {
+  background-color: $color-picker-blue;
+}
+
+.color-picker__checkbox[id="color-picker-blue"]:checked
+  + .color-picker__checkbox-label::before {
+  border: 1px solid $color-picker-blue;
+}
+
+.color-picker__checkbox[id="color-picker-gray"]
+  + .color-picker__checkbox-label::after {
+  background-color: $color-picker-gray;
+}
+
+.color-picker__checkbox[id="color-picker-gray"]:checked
+  + .color-picker__checkbox-label::before {
+  border: 1px solid $color-picker-gray;
+}
+ */
+.size-picker {
+  padding-top: 3px;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+}
+
+.size-picker__inner-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.size-picker__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+}
+
+.size-picker__checkbox-label {
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.size-picker__check-box {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: $main-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+.size-picker__check-input:checked + .size-picker__check-box,
+.size-picker__check-input:focus + .size-picker__check-box {
+  color: $main-dark;
+}
+
+.size-picker__check-input:disabled + .size-picker__check-box {
+  opacity: 0.3;
+}
+
+.product-recommendation {
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 2;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: -3px;
+  }
+}
+
+/* .product-recommendation__wrapper {
+  padding-top: 53px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+  }
+} */
+
+.product-recommendation__header {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}

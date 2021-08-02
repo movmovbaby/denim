@@ -1,31 +1,20 @@
-.bestsellers__wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.bestsellers__header {
+  font-family: "Work Sans", "Arial", "Helvetica", sans-serif;
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    font-size: 28px;
+    line-height: 33px;
   }
-}
 
-.bestsellers__list {
-  display: grid;
-  list-style: none;
-  grid-template-columns: 130px 130px;
-  grid-column-gap: 30px;
-
-  @media (min-width: $tablet-width) {
-    grid-template-columns: 324px 324px;
-    order: 3;
-  }
-}
-
-.product-item__img {
-  width: 130px;
-  height: 160px;
-
-  @media (min-width: $tablet-width) {
-    width: 324px;
-    height: 349px;
+  @media (min-width: $desktop-width) {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 34px;
   }
 }

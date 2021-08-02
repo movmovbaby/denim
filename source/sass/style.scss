@@ -6,12 +6,17 @@
 
 //blocks
 @import "blocks/visually-hidden/visually-hidden.scss";
+@import "blocks/button/button.scss";
+@import "blocks/items-list/items-list.scss";
 @import "blocks/wrapper/wrapper.scss";
 @import "blocks/page/page.scss";
 @import "blocks/page-header/page-header.scss";
-@import "blocks/main-nav/main-nav.scss";
 @import "blocks/promo/promo.scss";
 @import "blocks/bestsellers/bestsellers.scss";
 @import "blocks/collection/collection.scss";
 @import "blocks/categories/categories.scss";
 @import "blocks/page-footer/page-footer.scss";
+@import "blocks/main-nav/main-nav.scss";
+@import "blocks/catalog-header/catalog-header.scss";
+@import "blocks/catalog-filter/catalog-filter.scss";
+@import "blocks/product-card/product-card.scss";
