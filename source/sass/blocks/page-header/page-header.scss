@@ -1,7 +1,80 @@
+.page-header {
+  background-color: $light-grey;
+}
+
+.page-header--basic {
+  background-color: $main-white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
 .page-header__wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+.page-header__wrapper--basic {
+  background-color: $main-white;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page-header__nav-toggle {
+  position: relative;
+  top: 31px;
+  right: 0;
+  display: block;
+  width: 20px;
+  height: 10px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.page-header__nav--closed .page-header__nav-toggle::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background-color: $main-black;
+  box-shadow: 0 5px 0 0 $main-black, 0 10px 0 0 $main-black;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__nav--opened .page-header__nav-toggle {
+  top: 34px;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 2px;
+    background-color: $main-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__logo {
@@ -10,6 +83,7 @@
   align-items: center;
   padding-bottom: 20px;
   padding-top: 20px;
+  background-color: $main-white;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 25px;
@@ -17,42 +91,7 @@
   }
 }
 
-.main-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: $light-grey;
-  padding-bottom: 40px;
-}
-
-.main-nav__list {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-
-  @media (min-width: $desktop-width) {
-    flex-direction: column;
-  }
-}
-
-.site-list__item {
-  text-transform: capitalize;
-  font-family: "Work Sans", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.site-list__item a {
-  text-decoration: none;
-  color: $main-dark;
-}
-
-.user-list {
-  margin-left: auto;
+.page-header__logo--basic {
+  flex-basis: 100%;
+  margin-bottom: -67px;
 }
