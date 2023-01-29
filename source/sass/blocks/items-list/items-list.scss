@@ -40,6 +40,10 @@
 }
 
 .items-list__item {
+  a {
+    text-decoration: none;
+    color: $main-dark;
+  }
   &:hover {
     opacity: 0.95;
   }
